@@ -48,4 +48,3 @@ A aplicação deverá conter uma tela para exibir as transações que foram salv
 ![Alt text](./android3.jpg)
 ![Alt text](./android4.jpg)
 ![Alt text](./android5.jpg)
-![Alt text](./android6.jpg)
