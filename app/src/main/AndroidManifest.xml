@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.victo.virtualstore">
+
+    <!-- Permissão para o uso de internet para importar o Json -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Activity Itens e voltando para Activity Main -->
+        <activity
+            android:name=".Activity.ItensActivity"
+            android:label="Itens da Loja"
+            android:parentActivityName=".Activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.victo.virtualstore.Activity.MainActivity" />
+        </activity>
+        <!-- Carrinho para Itens -->
+        <activity
+            android:name=".Activity.CarrinhoActivity"
+            android:label="Carrinho"
+            android:parentActivityName=".Activity.ItensActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.victo.virtualstore.Activity.ItensActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.PagamentoActivity"
+            android:label="Pagamento"
+            android:parentActivityName=".Activity.ItensActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.victo.virtualstore.Activity.ItensActivity" />
+        </activity>
+        <activity android:name=".Activity.TransacoesActivity"></activity>
+    </application>
+
+</manifest>
