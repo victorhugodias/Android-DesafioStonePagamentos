@@ -39,7 +39,13 @@ Data e hora
 Últimos 4 dígitos do cartão
 Nome do portador do cartão
 Lista de Transações
-A aplicação deverá conter uma tela para exibir as transações que foram salvas em seu banco de dados.  
+A aplicação deverá conter uma tela para exibir as transações que foram salvas em seu banco de dados (SQLite).  
 
-## Imagens do App feito.
+### Imagens do App desenvolvido.
 
+![Alt text](./android1.jpg)
+![Alt text](./android2.jpg)
+![Alt text](./android3.jpg)
+![Alt text](./android4.jpg)
+![Alt text](./android5.jpg)
+![Alt text](./android6.jpg)
